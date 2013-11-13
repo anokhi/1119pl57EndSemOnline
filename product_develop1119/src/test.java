@@ -48,7 +48,7 @@ public class test {
 	{
 		cal.setAI(99);
 		cal.setSE(100);
-		cal.addition(99,100);
+		cal.addition(99,101);
 	}
 	
 	 public void testadd() {

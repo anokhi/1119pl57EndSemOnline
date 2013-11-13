@@ -28,4 +28,5 @@ public class marks {
 	public void setAI(int aI) {
 		AI = aI;
 	}
+	
 }

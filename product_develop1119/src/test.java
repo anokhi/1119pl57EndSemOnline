@@ -7,10 +7,12 @@ import org.junit.Test;
 public class test {
 	student st;
 	marks mk;
+	caltotmarks cal;
 	@Before
 	public void setUp() throws Exception {
 		st = new student();
 		mk = new marks();
+		cal = new caltotmarks();
 	}
 	
 
@@ -38,10 +40,20 @@ public class test {
 
 	      //Check that an object isn't null
 	      assertNotNull(Name);
-	      assertNotNull(course);
-
-	      
-		
+	      assertNotNull(course);	
 	}
+	
+	
+	public void testExceptionIsThrown()
+	{
+		cal.setAI(99);
+		cal.setSE(100);
+		cal.addition(99,100);
+	}
+	
+	 public void testadd() {
+		   
+		    assertEquals("99 + 100 must be 199", 199, cal.addition(10, 5));
+		  }
 	
 }

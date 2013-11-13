@@ -8,17 +8,19 @@ public class test {
 	student st;
 	@Before
 	public void setUp() throws Exception {
-		 st.setName("Rajeev");
-	      st.setAge(25);
-	      st.setCourse("mca");
+		st = new student();
+		
 	}
 	
 
 	@Test
 	public void test() {
-		assertEquals
+		st.setName("anokhi");
+		st.setCourse("mca");
+		st.setAge(22);
+		assertEquals("anokhi",st.getName());
 		
-		fail("Not yet implemented");
+		
 	}
 
 }
